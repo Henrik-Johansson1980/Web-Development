@@ -14,7 +14,6 @@ body{
   background: url('../images/bg.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
-  min-width: 300px;
 
 }
 
@@ -74,6 +73,7 @@ header #brand{
   float: left;
 }
 header #brand h1{
+  font-variant: small-caps;
   margin: 0;
 }
 header nav {
@@ -125,7 +125,6 @@ header  a:hover{
   opacity: .8;
   color:#222;
   border-bottom: 5px solid #ffe680;
-  border-top: 5px solid #ffe680;
 }
 
 #newsletter h1{
