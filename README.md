@@ -1,6 +1,6 @@
 # README
 
-This repo contains some web development practice projects. Made by following tutorials on YouTube. Most images are taken from pexels.com.
+This repo contains some web development practice projects. Made by following tutorials on YouTube. Most images are taken from https://www.pexels.com/.
 
 ## Landing page 1
 
