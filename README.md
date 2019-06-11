@@ -14,10 +14,6 @@ Based on this Traversy media tutorial https://www.youtube.com/watch?v=hVdTQWASli
 
 Based on this Traversy media tutorial https://www.youtube.com/watch?v=Xy3GlrddZFI&list=PLillGF-RfqbZTASqIqdvm1R5mLrQq79CU&index=31.
 
-## Vid Landing page
-
-Based on this Traversy media tutorial https://www.youtube.com/watch?v=Xy3GlrddZFI&list=PLillGF-RfqbZTASqIqdvm1R5mLrQq79CU&index=31.
-
 ## Basic HTML/CSS Project
 
 Based on this Traversy media tutorial https://www.youtube.com/watch?v=Wm6CUkswsNw&list=PLillGF-RfqbZTASqIqdvm1R5mLrQq79CU&index=3. 
