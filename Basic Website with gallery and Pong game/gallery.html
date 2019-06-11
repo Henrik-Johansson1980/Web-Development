@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<!--
+	Henrik Johansson
+	hejo1501
+	hejo1501@student.miun.se
+-->
+<html lang= "sv">
+	<head>
+		<meta charset = "UTF-8">
+		<title>Galleri</title>
+		<link rel= "stylesheet" href="css/style.css">
+		<script src = "js/main.js"></script>
+	</head>
+		
+	<body>
+		<!--Headerblock-->
+		<header>
+		</header>
+		<!-- Navigeringsblock -->
+		<nav class = "meny">
+			<a href = "index.html">Startsida</a>
+			<a href = "gallery.html">Galleri</a>
+			<a href = "game.html">Spel</a>
+			<a href = "contact.html">Kontakt</a>
+			<a href = "links.html">Länkar</a>
+		</nav>
+		<!-- Mainsektion -->
+		<main id = "gallerymain">
+			<h1 hidden>Galleri</h1>
+			<section id = "gallery">
+				<h2>Galleri</h2>
+				<p id = "klickText">Klicka på bilderna för att öppna en större version.</p>
+				<ul id = "imgList">
+					<li>
+						<img id = "img1" src= "img/autumnchill_small.png" alt = "Picture title: Autumn chill" >
+						<p><em>Autumn Chill</em>, Akvarell</p>
+					</li>
+					<li>
+						<img id = "img2" src= "img/sunsetbeach_small.png" alt = "Picture title: Sunset Beach" >
+						<p><em>Sunset beach</em>, Akvarell</p>
+					</li>
+					<li>
+						<img id = "img3" src= "img/lakesetting_small.png" alt = "Picture title: Lake Setting" >
+						<p><em>Lake Setting</em>, Akvarell</p>
+					</li>
+					<li>
+						<img id = "img4" src= "img/monochrome_small.png" alt = "Picture title: Monochrome" >
+						<p><em>Monochrome</em>, Akvarell</p>
+					</li>
+					<li>
+						<img id = "img5" src= "img/eveningboat_small.png" alt = "Picture title: Evening Boat" >
+						<p><em>Evening Boat</em>, Akvarell</p>
+					</li>
+					<li>
+						<img id = "img6" src= "img/goldenflowers_small.png" alt = "Picture title: Golden Flowers" >
+						<p><em>Golden Flowers</em>, Pastell</p>
+					</li>
+					<li>
+						<img id = "img7" src= "img/sunsettree_small.png" alt = "Picture title: Sunset Tree">
+						<p><em>Sunset tree</em>, Akvarell</p>
+					</li>
+				</ul>				
+			</section>
+			<!-- Feedbackformulär till bildgalleriet.-->
+			<section id = "feedback">
+				<h2>Feedback</h2>
+				<p>Om ni har frågor angånde material och tekniker eller förslag på förbättringar angående målningarna kan ni dela med er av dem via formuläret nedan. </p>
+	
+				<form id = "feedbackform" method = "post">
+				<!-- Gömda kompnenter-->
+					<input type = "hidden" id = "Mottagare" value = "hejo1501@student.miun.se"/>
+					<input type = "hidden" id = "Ämne" value = "Feedback på målningarna"/>
+				<!-- Input -->
+					<p>
+						<label> Förnamn:
+							<input type = "text" id = "feedFn" placeholder = "Namn" required />
+						</label>
+					</p>
+					<p>
+						<label> Efternamn:
+							<input type = "text" id = "feedLn" placeholder = "Efternamn" required />
+						</label>					
+					</p>				
+					<p>
+						<label> Epostadress:
+							<input type = "email" id = "feedEmail" placeholder = "name@domain.com" required />
+						</label>
+					</p>
+					<p>		
+						<label> Meddelande:
+						<br>
+						<textarea name = "comments" id = "feedbackTextArea"></textarea>
+						</label>
+					</p>					
+					<input type = "submit" value = "Send" id = "feedSubmitbutton">
+					<input type = "reset" value = "Clear" id = "feedClearbutton">	
+				</form>
+			</section>
+		</main>
+		<!-- Footer -->
+		<footer id = "galleryfooter">
+			<p><strong>&copy; Henrik Johansson 2016</strong></p>
+		</footer>
+	</body>
+	
+</html>

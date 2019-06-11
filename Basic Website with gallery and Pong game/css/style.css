@@ -1,0 +1,1147 @@
+/*******************************************************************************
+ * Projekt, Kurs: DT146G
+ * File: style.css
+ * Desc: Style sheet för hemsidan
+ * Henrik Johansson
+ * hejo1501
+ * hejo1501@.student.miun.se
+ ******************************************************************************/
+  @media only screen and (min-width: 250px) and (max-width: 480px)
+ {
+	 body
+	 {
+		background: #fff;
+		width: 420px;
+		margin: 0 auto;
+		font-family: arial, sans-serif;
+	 }
+	 
+	 /*Styling av sidhuvud*/
+	 header
+	 {
+		 width: 400px;
+		 height: 900px;
+		 height: 120px;
+		 /*Två bilder*/
+		 background-image: url("../img/henrik_johansson_logo_small.png")
+						  ,url("../img/smallheader.png"); 
+		 background-repeat: no-repeat; 
+		 /*Komma separerad lista, första alternativet sätter logons position,
+		 andra sätter stora bilden*/
+		 background-position: right bottom, left;
+		 background-color:grey;
+		 background-size: 170px, cover;
+		 margin-top: 10px;
+		 border: solid 1px grey;
+		 box-shadow: 5px 5px 3px lightgrey;
+	 }
+	
+	 /*NavigationsMeny*/
+	 nav
+	 {	
+		 position: relative;
+		 top: 570px;
+		 background-color: white; 
+	     width: 399px;
+		 height: 150px;
+		 margin-top: 10px;
+		 border: solid 1px grey;
+		 box-shadow: 5px 5px 3px 0 lightgrey;
+	 }
+	 /*Meny Länkar*/
+	 nav p 
+	 { 	
+		width: 400px;
+		text-align: center; 
+	 }
+	 /*Länkar i navmenyn*/
+	 .meny a
+	 {	
+		 color: black;
+		 text-align: center;
+		 text-transform: uppercase;
+		 width: 400px;
+		 height: 20px;
+		 border-right: solid 1px lightgrey;
+		 border-bottom: solid 1px lightgrey;
+		 padding: 4px 0 5px 0;
+		 text-decoration: none;
+		 float: left;
+	 }
+	 
+	.meny a:hover
+	{	
+		background-color: lightgrey;}
+	
+	.meny a:active
+	{ background-color: grey;}
+	
+	/*Styling av main*/
+	 main
+	 {
+		 position: absolute;
+		 top: 130px;
+		 width: 400px;
+		 height: 550px;
+		 /*Göm scrollist i sidled*/
+		 overflow-y : auto;
+		 overflow-x: hidden;
+		 margin-top: 10px;
+		 border: solid 1px grey;
+		 box-shadow: 5px 5px 3px lightgrey;
+	 }
+	 
+	main h1
+	{ 
+	  text-transform: uppercase;
+	  text-align: center;
+	 }
+	 
+	main h2
+	{ 
+		margin: 1em 1em;
+	  text-transform: uppercase;
+	}
+	
+	main p
+	{ margin: 1em  1em;
+	   font-size: 0.8em;
+	}
+	/*Styling av fotagrafiet*/
+	 #foto
+	 {
+		 float: right;
+		 width: 12.5em;
+		 margin: 1em;
+		 border-radius: 10px 10px 10px 10px;
+	 }
+	 
+	/*Stylinga av sidan med länkar*/
+	#linksection p
+	{ margin: 1.5em 2em;}
+	 
+	#linksection a
+	{ 	
+		color: black;
+		 text-decoration: none;
+	}
+	
+	#linksection a:hover
+	{ 
+		 font-size: 0.9em;
+		 padding: 0.5em 0.2em 0.5em 0.2em;
+		 background: grey;
+		 color: white;
+		 text-decoration: none;
+		 text-transform: uppercase;
+	}
+	#linksection a:visited
+	{ text-decoration: none;}
+	
+	/*Styling av kontaktsidan*/
+	#contactsection form
+	{
+		width: 380px;
+		background: lightgrey;
+		padding: 1.5em 0.5em;
+	}
+	
+	#contactSubj
+	{ margin-left: 2.8em; 
+	   width: 20em;
+	}
+	
+	#contactFn
+	{ margin-left: 1.5em; 
+	   width: 20em;
+	}
+	 
+	 #contactLn
+	 {margin-left: 0.85em;
+	  width: 20em;
+	 }
+	 #contactEmail
+	 { 
+		margin-left: 0.1em;
+		width: 20em;}
+	 
+	 #contactTextArea
+	 {
+		 width: 26.5em;
+		 height: 10em;
+	 }
+	 
+	 #contactSubmitbutton
+	 {
+		 margin-left: 0.5em;
+		 width: 12em; height: 3em;
+		 background: lightgrey;
+	 }
+	 #contactClearbutton
+	 {
+		 margin-left: 2.1em;
+		 width: 12em; height: 3em;
+		 background: lightgrey;
+	 }
+	 
+	 /*Byt färg vid hover på knapparna*/
+	 #feedSubmitbutton:hover, #feedClearbutton:hover
+	 {
+		 background: grey;
+	 }
+
+	#contactsection a
+	 {
+		 color: black;
+		 text-decoration: none;
+	 }
+	 
+	#contactsection a:hover
+	{ 
+		 font-size: 0.9em;
+		 padding: 0.5em 0.2em 0.5em 0.2em;
+		 background: grey;
+		 color: white;
+		 text-decoration: none;
+		 text-transform: uppercase;
+	}
+
+	 #contactsection a:visited
+	{ text-decoration: none;}
+
+	/*Styling av gallerisektionen*/
+	#gallery
+	{	width: 390px;}
+	 
+
+	#gallery p
+	{ text-align: center;}
+	
+	 ul#imgList 
+	 {list-style-type: none;}
+	 
+	#imgList li
+	 {	
+		width: 320px;
+		border: ridge 10px white;
+		border-radius: 2px 2px 2px 2px;
+		margin-left: -20px; 
+	 }
+	 
+	#imgList img
+	{
+		width: 310px;
+		height: 200px;
+		margin: 5px;
+	}
+	 
+	 #imgList p 
+	 {
+		border: inset 4px lightgrey;
+		text-align: center;
+	}
+	#gallery h2
+	{
+		text-align: center;
+		text-transform: uppercase;
+		margin: 1em 0.5em;
+	}
+	
+	#feedback
+	{ width: 390px;
+		border-top: solid 1px lightgrey;
+	}
+	 
+	#feedback h2
+	{
+		text-align: center;
+		text-transform: uppercase;
+		margin-top: 1.5em;
+	}
+	 
+	#feedback p
+	{text-align: left;}
+	 
+	form#feedbackform
+	 {
+		 width: 370px;
+		 margin: 0.5em;
+		 padding: 1em 0 1em 0;
+		 background: lightgrey;
+	 }
+	 
+	 #feedFn
+	 { margin-left: 1.5em; 
+	   width: 20em;
+	 }
+	 
+	 #feedLn
+	 {
+		margin-left: 1.5em;
+		width: 20em;
+	 }
+	 #feedEmail
+	 { width: 20em;
+	   margin-left: 1.5em;
+	 }
+	 
+	 #feedbackTextArea
+	 {
+		 width: 24em;
+		 height: 10em;
+	 }
+	 
+	 #feedSubmitbutton
+	 {
+		 margin-left: 0.5em;
+		 width: 12em; height: 3em;
+		 background: lightgrey;
+	 }
+	#feedClearbutton
+	 {
+		 margin-left: 2.1em;
+		 width: 12em; height: 3em;
+		 background: lightgrey;
+	 }
+	 
+	 #feedSubmitbutton:hover, #feedClearbutton:hover
+	 {
+		 background: grey;
+	 }
+	 
+	/*Styling av footer*/
+	footer
+	{
+		 position: absolute;
+		 top: 870px;
+		 width: 400px;
+		 height: 25px;
+		 margin-top: 10px;
+		 border: solid 1px grey;
+		 box-shadow: 5px 5px 3px lightgrey; 
+	 }
+	 
+	 footer p
+	 {
+		 font-size: 0.8em;
+		 margin: 0.5em 1em;
+	 }
+ }
+
+
+
+/* Styling för mellanstora fönser/skärmar*/
+ @media only screen and (min-width: 481px) and (max-width: 1024px)
+ {
+	 body
+	 {
+		background: #fff;
+		width: 900px;
+		margin: 0 auto;
+		font-family: arial, sans-serif;
+		overflow-x: hidden;
+	 }
+	 
+	 /*Styling av sidhuvud*/
+	 header
+	 {
+		 width: 825px;
+		 height: 150px;
+		 /*Två bilder*/
+		 background-image: url("../img/henrik_johansson_logo_medium.png")
+						  ,url("../img/mediumheader.png"); 
+		 background-repeat: no-repeat; 
+		 /*Komma separerad lista, första alternativet sätter logons position,
+		 andra sätter stora bilden*/
+		 background-position: right bottom, left;
+		 background-color:grey;
+		 background-size: 300px, cover;
+		 margin-top: 10px;
+		 border: solid 1px grey;
+		 box-shadow: 10px 15px 3px lightgrey;
+	 }
+	
+	 /*Meny*/
+	 nav
+	 {	
+		 background-color: white; 
+	     width: 825px;
+		 height: 50px;
+		 margin-top: 0px;
+		 border: solid 1px grey;
+		 box-shadow: 10px 5px 3px 0 lightgrey;
+	 } 
+	 
+	 /*Meny Länkar*/
+	 .meny a
+	 {	
+	     color: black;
+		 text-align: center;
+		 text-transform: uppercase;
+		 width: 115px;
+		 height: 20px;
+		 margin-top: 1px;
+		 padding: 15px 24px 12px 24px;
+		 border-left: solid 1px grey;
+		 text-decoration: none;
+		 float: left;
+	 }
+	.meny a:first-child
+	{ border-left: none;}
+	.meny a:last-child
+	{ width: 120px;}
+	.meny a:hover
+	{	background-color: lightgrey;}
+	 
+	.meny a:active
+	{ background-color: grey;}
+	 
+	/*Styling av main*/
+	 main
+	 {
+		 width: 825px;
+		 height: 600px;
+		 /*Göm scrollist i sidled*/
+		 overflow-x: hidden;
+		 overflow-y: auto;
+		 margin-top: 10px;
+		 border: solid 1px grey;
+		 box-shadow: 10px 10px 3px lightgrey;
+	 }
+	 
+	 main h1
+	 { text-transform: uppercase;
+		 margin: 1em 0.6em  0em ;}
+	 	main h2
+	 {
+		 text-transform: uppercase;
+	   margin: 1em 1em;
+	 }
+	 main p
+	 { margin: 1em 0.6em;
+	   font-size: 0.8em;
+	 }
+	 
+		/*Styling av fotagrafiet*/
+	 #foto
+	 {
+		 float: right;
+		 width: 18em;
+		 margin: 0 2em;
+		 border-radius: 10px 10px 10px 10px;
+	 }
+	 
+	/*Stylinga av sidan med länkar*/
+	#linksection p
+	{
+		 margin: 1em 2.1em;
+	}
+	 
+	#linksection a
+	{
+		 color: black;
+		 text-decoration: none;
+	}
+	
+	
+	#linksection a:hover
+	{
+		 padding: 0.5em 0.5em 0.5em 0.5em; 
+		 background: grey;
+		 color: white;
+		 text-decoration: none;
+		 text-transform: uppercase;
+	}
+	
+	#linksection a:visited
+	{
+		 color: black;
+		 text-decoration: none;
+	} 
+		
+	/*Styling av kontaktsidan*/
+	#contactsection form
+	{
+		width: 780px;
+		margin: 0.5em;
+		background: lightgrey;
+		padding: 1.5em 0.5em;
+	}
+	#contactSubj
+	{ margin-left: 2.8em; 
+	   width: 20em;
+	}
+	#contactFn
+	{ margin-left: 1.5em; 
+	   width: 20em;
+	}
+	 
+	 #contactLn
+	 {margin-left: 0.85em;
+	  width: 20em;
+	 }
+	 #contactEmail
+	 { width: 20em;}
+	 
+	 #contactTextArea
+	 {
+		 width: 55em;
+		 height: 10em;
+	 }
+	 
+	 #contactSubmitbutton
+	 {
+		 margin-left: 0.5em;
+		 width: 12em; height: 3em;
+		 background: lightgrey;
+	 }
+	 #contactClearbutton
+	 {
+		 margin-left: 2.1em;
+		 width: 12em; height: 3em;
+		 background: lightgrey;
+	 }
+	 
+	 #contactSubmitbutton:hover, #contactClearbutton:hover
+	 {
+		 background: grey;
+	 }
+
+	#contactsection a
+	 {
+		 text-decoration: none;
+	 }
+	 
+	#contactsection a:hover
+	{ 
+		 font-size: 0.9em;
+		 padding: 0.5em 0.2em 0.5em 0.2em;
+		 background: grey;
+		 color: white;
+		 text-decoration: none;
+		 text-transform: uppercase;
+	}
+	
+	 #contactsection a:visited
+	{
+		 color: black;
+		 text-decoration: none;
+	} 
+	/*Styling av galleiet*/ 
+	ul#imgList
+	 { 
+		list-style-type: none;
+		display: inline-block;	 
+	}
+	
+	#imgList li
+	{	
+		width: 150px;
+		border: ridge 10px white;
+		border-radius: 2px 2px 2px 2px;
+		float: left;
+	}
+	
+	#gallery 
+	{
+		float: left;
+		width: 480px;
+		border-right: solid 1px lightgrey;
+	}
+	
+	#gallery h2
+	{text-align: center;}	
+
+	
+	#gallery p
+	{text-align: center;}
+	
+	ul#imgList
+	 { 
+		margin-left: -15px;
+		list-style-type: none; 
+		display: inline-block;
+	}	
+	
+	#imgList li
+	{
+		float: left;
+		width: 180px;
+		height: 150px;
+		border: ridge 10px white;
+		border-radius: 2px 2px 2px 2px;
+		margin: 10px 10px;
+	}
+	
+	#imgList p 
+	{	
+		text-align: center;
+		margin: 0 2px 0 2px;
+		font-size: 0.8em;
+		border: inset 4px lightgrey;
+	}
+	
+	#imgList li img
+	{	
+		width: 175px;
+		margin: 2px 4px;
+		height: 120px;
+	}
+	
+	/*Styling av feedbackformulär*/
+	#feedback
+	{
+	  float: right;
+	  width: 300px;
+	}
+	#feedback h2
+	{text-align: center;}
+	 
+	#feedback p
+	{text-align: left;}
+	 
+	form#feedbackform
+	 {
+		 width: 315px;
+		 height: 700px;
+		 margin-left: -20px;
+		 padding: 1em 0 1em 0;
+		 background: lightgrey;
+	 }
+	 
+	 #feedFn
+	 { margin-left: 0em; 
+	   width: 21.5em;
+	 }
+	 #feedLn
+	 {margin-left: 0em;
+	  width: 21.5em;
+	 }
+	 #feedEmail
+	 {	 
+		 width: 21.5em;
+	 }
+	 
+	 #feedbackTextArea
+	 {
+		 width: 22em;
+		 height: 10em;
+	 }
+	
+	 #feedSubmitbutton
+	 {
+		 margin-left: 0.5em;
+		 width: 10em;
+		 height: 3em;
+	 }
+	 
+	 #feedClearbutton
+	 {
+		 margin-left: 1.5em;
+		 width: 10em;
+		 height: 3em;
+	 }
+	 
+	 #feedSubmitbutton:hover, #feedClearbutton:hover
+	 { background: grey;}
+	
+	 /*Styling av spelsidan*/
+	 #gamemain h1
+	{
+		margin-top: 0.1em;
+	}
+	 
+	#gamemain p
+	{
+		margin-top: 0.1em;
+		margin-left: 1.5em;
+	}
+	
+	footer
+	 {
+		 width: 825px;
+		 height: 50px;
+		 margin-top: 10px;
+		 border: solid 1px grey;
+		 box-shadow: 10px 10px 3px lightgrey; 
+	 }
+	 
+	 footer p
+	 { margin: 1em 1em;}
+	 
+ }
+
+/*Styling för stora fönster*/
+ @media only screen and (min-width: 1025px)
+ {
+	 body
+	 {
+		background-color: #fff;
+		width: 1025px;
+		margin: 0 auto;
+		font-family: arial, sans-serif;
+	 }
+	 
+	 /*Styling av sidhuvud*/
+	 header
+	 {
+		 width: 1000px;
+		 height: 180px;
+		 background-color: lightgrey;
+		 /*Två bilder*/
+		 background-image: url("../img/henrik_johansson_logo_large.png")
+						  ,url("../img/largeheader.png"); 
+		 background-repeat: no-repeat; 
+		 /*Kommaseparerad lista, första alternativet sätter logons position,
+		 andra sätter stora bilden*/
+		 background-position: right bottom, left;
+		 margin-top: 10px;
+		 border: solid 1px grey;
+		 box-shadow: 10px 15px 3px lightgrey;
+	 }
+	
+	 /*Meny*/
+	 nav
+	 {	 
+		 background-color: white; 
+	     width: 1000px;
+		 height: 50px;
+		 margin-top: 0px;
+		 border: solid 1px grey;
+		 box-shadow: 10px 5px 3px 0 lightgrey;
+	 } 
+	 
+	 /*Meny Länkar*/
+	 .meny a
+	 {	
+		 color: black;
+		 text-align: center;
+		 text-transform: uppercase; /*Stora bokstäver*/
+		 width: 150px;
+		 height: 20px;
+		 margin-top: 1px;
+		 padding: 15px 24px 12px 24px;
+		border-left: solid 1px grey;
+		 text-decoration: none;
+		 float: left;
+	 }
+	 /*Sätt en border på första länkens vänstersida*/
+	.meny a:first-child
+	{ border-left: none;}
+	.meny a:last-child
+	{ width: 155px;}
+	.meny a:hover
+	{	background-color: lightgrey;}
+	 
+	.meny a:active
+	{ background-color: grey;}
+	 
+	/*Generell styling av main*/
+	 main
+	 {
+		 width: 1000px;
+		 height: 600px;
+		 /*Göm scrollist i sidled*/
+		 overflow-x: hidden;
+		 overflow-y: auto;
+		 margin-top: 10px;
+		 border: solid 1px;
+		 border-color: grey;
+		 box-shadow: 10px 10px 3px lightgrey;
+	 }
+	 
+	 main h1
+	 {text-transform: uppercase; 
+	  margin: 0.1em 0.8em 0em;
+	 }
+	 
+	 main h2
+	 {
+		text-transform: uppercase;
+		margin: 1em 0.9em 0em;
+	 }
+	 main p
+	 { margin: 1em 1.5em;}
+	 
+	/*Styling av fotagrafiet*/
+	 #foto
+	 {
+		 float: right;
+		 width: 18em;
+		 margin: 0 2em;
+		 border-radius: 10px 10px 10px 10px;
+	 }
+	 	/*Stylinga av sidan med länkar*/
+	#linksection p
+	{
+		 margin: 1em 1.5em;
+	}
+	 
+	#linksection a
+	{
+		 color: black;
+		 text-decoration: none;
+	}
+	
+	#linksection a:hover
+	{
+		 padding: 0.5em 0.5em 0.5em 0.5em; 
+		 background: grey;
+		 color: white;
+		 text-decoration: none;
+		 text-transform: uppercase;
+	}
+	#linksection a:visited
+	{
+		 text-decoration: none;
+	} 
+		
+	/*Styling av kontaktsidan*/
+	
+	#contactsection p
+	{
+		margin-top: 0.5em;
+	}
+	
+	#contactsection form
+	{
+		width: 970px;
+		margin: 0.5em;
+		background: lightgrey;
+		padding: 1.5em 0.5em;
+	}
+	
+	#contactSubj
+	{ margin-left: 3.5em; 
+	  width: 20em;
+	}
+	
+	#contactFn
+	{ margin-left: 1.9em; 
+	   width: 20em;
+	}
+	 
+	 #contactLn
+	 {margin-left: 1.1em;
+	  width: 20em;
+	 }
+	 #contactEmail
+	 { width: 20em;}
+	 
+	 #contactTextArea
+	 {
+		 width: 70em;
+		 height: 10em;
+	 }
+	 
+	 #contactSubmitbutton
+	 {
+		 margin-left: 1em;
+		 width: 12em; height: 3em;
+		 background: lightgrey;
+	 }
+	 #contactClearbutton
+	 {
+		 margin-left: 2.1em;
+		 width: 12em; height: 3em;
+		 background: lightgrey;
+	 }
+	 
+	 #contactSubmitbutton:hover, #contactClearbutton:hover
+	 {
+		 background: grey;
+	 }
+
+	#contactsection a
+	 {
+		 color: black;
+		 text-decoration: none;
+	 }
+	 
+	#contactsection a:hover
+	{ 
+		 font-size: 0.9em;
+		 padding: 0.5em 0.2em 0.5em 0.2em;
+		 background: grey;
+		 color: white;
+		 text-decoration: none;
+		 text-transform: uppercase;
+	}
+	
+	 #contactsection a:visited
+	{ text-decoration: none;} 
+	
+	/*Styling av gallerisektionen*/
+	#gallery 
+	{
+		float: left;
+		width: 650px;
+		border-right: solid 1px lightgrey;
+	}	
+	#gallery h2
+	{text-align: center;}
+	
+	#gallery p
+	{text-align: center;}
+	
+	ul#imgList
+	 { 
+		list-style-type: none; 
+		display: inline-block;
+	}	
+	
+	#imgList li
+	{
+		float: left;
+		width: 250px;
+		height: 150px;
+		border: ridge 10px white;
+		border-radius: 2px 2px 2px 2px;
+		margin: 10px 10px;
+	}
+	
+	#imgList p 
+	{	
+		text-align: center;
+		margin: 0 2px 0 2px;
+		font-size: 0.8em;
+		border: inset 4px lightgrey;
+	}
+	
+	#imgList li img
+	{	
+		width: 245px;
+		margin: 2px 3px;
+		height: 120px;
+	}
+	 
+	/*Styling av feedbackformulär*/
+	#feedback
+	{
+	  float: right;
+		width: 300px;
+	}
+	#feedback h2
+	{text-align: center;}
+	 
+	#feedback p
+	{width: 300px;
+		margin-left: -20px;
+	}
+	 
+	 
+	form#feedbackform
+	{
+		 width: 315px;
+		 height: 650px;
+		 margin-left: -20px;
+		 padding: 1em 0 1em 0;
+		 background: lightgrey;
+	}
+	 
+	#feedbackform p
+	 {
+		 margin-left: 0.5em;
+	 }
+	 
+	 #feedFn
+	 { margin-left: 0em; 
+	   width: 21.5em;
+	 }
+	 #feedLn
+	 {margin-left: 0em;
+	  width: 21.5em;
+	 }
+	 #feedEmail
+	 {	 
+		 width: 21.5em;
+	 }
+	 
+	 #feedbackTextArea
+	 {
+		 width: 22em;
+		 height: 10em;
+	 }
+	
+	 #feedSubmitbutton
+	 {
+		 margin-left: 1em;
+		 width: 10em;
+		 height: 3em;
+	 }
+	 
+	 #feedClearbutton
+	 {
+		 margin-left: 1.7em;
+		 width: 10em;
+		 height: 3em;
+	 }
+	
+	 #feedSubmitbutton:hover, #feedClearbutton:hover
+	 { background: grey;}
+	 
+	 /*Styling av text på spelsidan*/
+	 #gamemain h1
+	{
+		margin-top: 0.1em;
+	}
+	 
+	 #gamemain p
+	{
+		margin-top: 0.1em;
+		margin-left: 1.5em;
+	}
+	 
+	 footer
+	 {
+		 width: 1000px;
+		 height: 50px;
+		 margin-top: 10px;
+		 border: solid 1px grey;
+		 box-shadow: 10px 10px 3px lightgrey; 
+	 }
+	 
+	 footer p
+	 {
+		 margin: 1em 1em;
+	 }
+	 
+ }
+ 
+ /*Styling för utskrift*/
+ @media print
+ {
+	 body
+	 {
+		background: #fff;
+		width: 100%;
+		margin: 0 auto;
+		font-family: serif;
+	 }
+	 
+	 /*Styling av sidhuvud*/
+	 header
+	 {
+		width: 100%;
+		height: 50pt;
+		background-image: url("../img/logo_black.png");
+		background-size: 100pt;
+		background-repeat: no-repeat;
+		background-position: right bottom;	
+	 }
+	
+	 /*Visa inte nav. meny*/
+	 nav
+	 {	 
+		display: none;
+	 } 
+	 
+	 
+	 main
+	 {
+		 width: 100%;
+		 height: 20cm;
+		 margin-top: 10px;
+	 }
+	 
+	 main h1
+	 {
+		 margin: 1em 1em;
+	 }
+	 
+	 main p
+	 {
+		 margin: 1em 1em;
+	 }
+	 
+	 /*Visa inte fotot*/
+	#foto
+	{display: none;}
+	
+	#gallery 
+	{
+		float: left;
+		width: 650px;
+	}	
+	#gallery h2
+	{text-align: center;}
+		
+	ul#imgList
+	 { 
+		list-style-type: none; 
+		display: inline-block;
+	}	
+	
+	#imgList li
+	{
+		float: left;
+		width: 250px;
+		height: 150px;
+		border: ridge 10px white;
+		border-radius: 2px 2px 2px 2px;
+		margin: 10px 15px;
+	}
+	
+	#imgList p 
+	{	
+		text-align: center;
+		margin: 0 2px 0 2px;
+		font-size: 0.8em;
+		border: inset 4px lightgrey;
+	}
+	
+	#imgList li img
+	{	
+		width: 245px;
+		margin: 2px 3px;
+		height: 120px;
+	}
+	
+	/*Ta bort klicka här texten ovanför bilderna*/
+	#klickText
+	{display: none;}
+	/*Visa inte formuläret*/
+	#feedback
+	{
+		display: none;
+	}
+	/*Visa inte formuläret*/
+	#contactform
+	{	display: none;}
+	
+	#gamesection
+	{display: none;	}
+	
+	#linksection h1
+	{ font-size: 14pt;}
+	
+	#linksection h2
+	{	
+		font-size: 12pt;
+		margin-left: 10pt;
+	}
+	#linksection p
+	{ font-size: 10pt;}
+	
+	#linksection a
+	{
+		color: black;
+		font-size: 10pt;
+		text-decoration: none;
+	}
+	
+	/*Sätt fast footern på nedre sidan av pappret*/
+	footer
+	{
+		 position: absolute;
+		 width: 100%;
+		 height: 30pt;
+		 margin-top: 100pt;
+	}
+	 
+	 footer p
+	 {
+		 margin: 1em 1em;
+	 }
+	 
+ }

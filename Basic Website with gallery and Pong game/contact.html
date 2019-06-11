@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<!--
+	Henrik Johansson
+	hejo1501
+	hejo1501@student.miun.se
+-->
+<html lang = "sv">
+	<head>
+		<meta charset = "UTF-8">
+		<title>Kontakt</title>
+		<link rel= "stylesheet" href="css/style.css">
+		<script src = "js/main.js"></script>
+	</head>
+		
+	<body>
+		<!--Headerblock-->
+		<header>
+		</header>
+		<!-- Navigeringsblock -->
+		<nav class = "meny">
+			<a href = "index.html">Startsida</a>
+			<a href = "gallery.html">Galleri</a>
+			<a href = "game.html">Spel</a>
+			<a href = "contact.html">Kontakt</a>
+			<a href = "links.html">Länkar</a>
+		</nav>
+		<!-- Mainsektion -->
+		<main>
+			<h1>Kontakt</h1>
+	
+			<!-- Feedbackformulär till bildgalleriet.-->
+			<section id = "contactsection">
+				<h2 hidden> Kontakta mig </h2>
+					<p>Ni kan komma i kontakt med mig på något av följande sätt: </p>
+					<p><a href = "https://www.facebook.com/henrik.johansson.7393">Min Facebooksida</a></p>
+					<p>Eller skriv ett epostmeddelande  via formuläret nedan.</p>
+					<form id = "contactform" method = "post" >
+				<!-- Gömda kompnenter-->
+						<input type = "hidden" id = "Mottagare" value = "hejo1501@student.miun.se"/>
+				<!-- Input -->
+						<p>
+							<label> Ämne:
+							<input type = "text" id = "contactSubj" placeholder = "Ämne" /> <!-- Inte növändig -->
+							</label>
+						</p>
+						<p>
+							<label> Förnamn:
+							<input type = "text" id = "contactFn" placeholder = "Namn" required /> 
+							</label>
+						</p>
+						<p>
+							<label> Efternamn:
+								<input type = "text" id = "contactLn" placeholder = "Efternamn"  required />
+							</label>					
+						</p>				
+						<p>
+							<label> Epostadress:
+								<input type = "email" id = "contactEmail" placeholder = "name@domain.com"  required />
+							</label>
+						</p>
+						<p>		
+							<label> Meddelande:
+							<br>
+							<textarea name = "comments" id = "contactTextArea"></textarea>
+							</label>
+						</p>					
+						<input type = "submit" value = "Send" id = "contactSubmitbutton">
+						<input type = "reset" value = "Clear" id = "contactClearbutton">	
+					</form>
+			</section>
+		</main>
+		<!-- Footer -->
+		<footer>
+			<p><strong>&copy; Henrik Johansson 2016</strong></p>
+		</footer>
+	</body>
+	
+</html>
